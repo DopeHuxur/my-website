@@ -1,5 +1,5 @@
 /* GENERAL */
-@import url('https://fonts.googleapis.com/css2?family=Teko&family=Tulpen+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Teko:wght@300..700&family=Tulpen+One&display=swap');
 
 * {
     margin: 0;
@@ -25,6 +25,11 @@ h2 {
     font-size: 2em;
 }
 
+.logo img {
+    width: 40px;
+    height: auto;
+}
+
 
 
 
@@ -32,6 +37,12 @@ h2 {
 /* TRANSITION */
 a, .btn {
     transition: all 0.5s ease;
+}
+
+.btn {
+    font-family: "Teko", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
 
@@ -46,7 +57,7 @@ nav, .nav-links {
 nav {
     justify-content: space-between;
     align-items: center;
-    height: 13vh;
+    height: 15vh;
     padding: 0 3rem;
 }
 .nav-links {
@@ -359,6 +370,12 @@ section {
     text-align: center;
 }
 
+.text-container {
+    font-family: "Teko", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
 .section-container {
     gap: 4rem;
     height: 80%;
@@ -474,10 +491,68 @@ article .icon {
 
 .contact-info-container p {
     font-size: 2rem;
+    font-family: "Teko", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
 .contact-icon {
     cursor: default;
+}
+
+.contact-container {
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly ;
+}
+
+.contact-left {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+
+.contact-inputs {
+    width: 400px;
+    height: 50px;
+    border: rgb(242, 159, 88) 2px solid;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    border-radius: 50px;
+}
+
+.contact-inputs:hover {
+    border: rgb(85, 85, 85) 2px solid;
+}
+
+.contact-left textarea {
+    height: 200px;
+    padding-top: 15px;
+    border-radius: 20px;
+}
+
+.contact-inputs:focus {
+    border: rgb(9, 154, 217) 2px solid;
+}
+
+.contact-inputs::placeholder {
+    color: rgb(85, 85, 85);
+}
+
+.contact-left button {
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: white;
+    gap: 10px;
+    border: none;
+    border-radius: 50px;
+    background: rgb(242, 159, 88);
+    cursor: pointer;
 }
 
 
@@ -485,8 +560,12 @@ article .icon {
 
 /* FOOTER SECTION */
 footer {
-    height: 26vh;
-    margin: 0 1rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    height: 25vh;
+    margin: 0 3rem;
+    padding-bottom: 1rem;
 }
 
 footer p {
