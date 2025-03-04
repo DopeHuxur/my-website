@@ -11,7 +11,7 @@
 </head>
 <body>
     <nav id="desktop-nav">
-        <div class="logo"><img src="./assets/favicon.ico" alt="Logo"></div>
+        <div class="logo"><img src="./assets/logo.png" alt="Logo"></div>
         <div>
             <ul class="nav-links">
                 <li><a href="#about">about me.</a></li>
@@ -21,7 +21,7 @@
         </div>
     </nav>
     <nav id="hamburger-nav">
-        <div class="logo"><img src="./assets/favicon.ico" alt="Logo"></div>
+        <div class="logo"><img src="./assets/logo.png" alt="Logo"></div>
         <div class="hamburger-menu">
             <div class="hamburger-icon" onclick="toggleMenu()">
                 <!-- <span></span>
@@ -87,7 +87,8 @@
     <section id="experience">
         <p class="section__text__p1">what about my</p>
         <h1 class="title">EXPERTISE?</h1>
-        <div class="experience-details-container">
+        <!-- WHAT I WOULD USE INSTEAD OF A TABLE -->
+        <!-- <div class="experience-details-container">
             <div class="about-containers">
                 <div class="details-container">
                     <h2 class="experience-sub-title">Frontend Development</h2>
@@ -178,6 +179,73 @@
                     </div>
                 </div>
             </div>
+        </div> -->
+        <div class="experience-details-table">
+            <table class="table-container">
+                <tr>
+                    <th colspan="3">FRONTEND DEVELOPMENT</th>
+                </tr>
+                <tr>
+                    <td><img src="./assets/checkmark.png" alt="Checkmark Icon" class="checkmark-size"></td>
+                    <td>HTML</td>
+                    <td class="description">Intermediate <p>(Comfortable with common tasks and solving problems.)</p></td>
+                </tr>
+                <tr>
+                    <td><img src="./assets/checkmark.png" alt="Checkmark Icon" class="checkmark-size"></td>
+                    <td>CSS</td>
+                    <td class="description">Intermediate <p>(Comfortable with common tasks and solving problems.)</p></td>
+                </tr>
+                <tr>
+                    <td><img src="./assets/checkmark.png" alt="Checkmark Icon" class="checkmark-size"></td>
+                    <td>JavaScript</td>
+                    <td class="description">Beginner <p>(Just trying not to break things.)</p></td>
+                </tr>
+                <tr>
+                    <td><img src="./assets/checkmark.png" alt="Checkmark Icon" class="checkmark-size"></td>
+                    <td>TypeScript</td>
+                    <td class="description">Beginner <p>(Just trying not to break things.)</p></td>
+                </tr>
+                <tr>
+                    <td><img src="./assets/checkmark.png" alt="Checkmark Icon" class="checkmark-size"></td>
+                    <td>Swift</td>
+                    <td class="description">Beginner <p>(Just trying not to break things.)</p></td>
+                </tr>
+                <tr>
+                    <td><img src="./assets/checkmark.png" alt="Checkmark Icon" class="checkmark-size"></td>
+                    <td>Sleeping</td>
+                    <td class="description">Expert <p>(Highly skilled with a deep understanding of the subject.)</p></td>
+                </tr>
+            </table>
+            <table  class="table-container">
+                <tr>
+                    <th colspan="3">BACKEND DEVELOPMENT</th>
+                </tr>
+                <tr>
+                    <td><img src="./assets/checkmark.png" alt="Checkmark Icon" class="checkmark-size"></td>
+                    <td>MySQL</td>
+                    <td class="description">Advanced <p>(Experienced in handling challenges.)</p></td>
+                </tr>
+                <tr>
+                    <td><img src="./assets/checkmark.png" alt="Checkmark Icon" class="checkmark-size"></td>
+                    <td>Node JS</td>
+                    <td class="description">Intermediate <p>(Comfortable with common tasks and solving problems.)</p></td>
+                </tr>
+                <tr>
+                    <td><img src="./assets/checkmark.png" alt="Checkmark Icon" class="checkmark-size"></td>
+                    <td>Python</td>
+                    <td class="description">Advanced <p>(Experienced in handling challenges.)</p></td>
+                </tr>
+                <tr>
+                    <td><img src="./assets/checkmark.png" alt="Checkmark Icon" class="checkmark-size"></td>
+                    <td>Java</td>
+                    <td class="description">Beginner <p>(Just trying not to break things.)</p></td>
+                </tr>
+                <tr>
+                    <td><img src="./assets/checkmark.png" alt="Checkmark Icon" class="checkmark-size"></td>
+                    <td>Procrastination</td>
+                    <td class="description">Advanced <p>(Experienced in handling challenges.)</p></td>
+                </tr>
+            </table>
         </div>
         <img src="./assets/arrow.png" alt="Arrow Icon" class="icon arrow" onclick="location.href='./#projects'"/>
     </section>

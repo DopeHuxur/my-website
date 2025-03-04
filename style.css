@@ -576,3 +576,52 @@ footer p {
 /* .small-text {
     font-size: 1.3rem;
 } */
+
+
+
+
+/* TABLE SECTION */
+.experience-details-table {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 3rem;
+}
+
+.table-container {
+    width: 45%;
+    border: 1px solid rgb(242, 159, 88);
+    border-radius: 3rem;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    vertical-align: top;
+}
+
+.table-container td:nth-child(2) {
+    font-weight: bold;
+}
+
+th {
+    font-size: 40px;
+    padding-bottom: 10px;
+    color: rgb(85, 85, 85);
+}
+
+td {
+    padding: 10px;
+    font-family: "Tulpen One", sans-serif;
+    font-size: 30px;
+}
+
+.description {
+    color: rgb(85, 85, 85);
+    font-size: 28px;
+}
+
+.checkmark-size {
+    width: 20px;
+    height: auto;
+}
