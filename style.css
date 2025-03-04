@@ -194,7 +194,6 @@ a:hover {
 
 
 
-
 /* SECTIONS */
 section {
     padding-top: 5vh;
@@ -202,6 +201,7 @@ section {
     margin: 0 15rem;
     box-sizing: border-box;
     min-height: fit-content;
+    animation: fadeIn 1s ease-in-out;
 }
 
 .section-container {
@@ -590,14 +590,28 @@ footer p {
 
 .table-container {
     width: 45%;
-    border: 1px solid rgb(242, 159, 88);
-    border-radius: 3rem;
+    /* border: 1px solid rgb(242, 159, 88); */
+    /* border-radius: 3rem; */
     padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     vertical-align: top;
+    border-collapse: collapse;
+}
+
+.table-container th, .table-container td {
+    border: 1px solid rgb(242, 159, 88);
+    padding: 10px;
+}
+
+.table-container tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.table-container tr:hover {
+    background-color: rgb(241, 229, 172);
 }
 
 .table-container td:nth-child(2) {
@@ -608,6 +622,7 @@ th {
     font-size: 40px;
     padding-bottom: 10px;
     color: rgb(85, 85, 85);
+    background-color: rgb(242, 159, 88);
 }
 
 td {
